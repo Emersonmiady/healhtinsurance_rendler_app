@@ -3,7 +3,7 @@ import pandas as pd
 
 class HealthInsuranceCrossSell:
     def __init__(self):
-        self.home_path = '../parameter/'
+        self.home_path = '../features/'
         self.encoders = pickle.load(open(self.home_path + 'encoders.pkl', 'rb'))
         self.scalers = pickle.load(open(self.home_path + 'scalers.pkl', 'rb'))
         self.final_features = [
